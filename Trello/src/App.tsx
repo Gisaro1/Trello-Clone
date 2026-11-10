@@ -1,6 +1,7 @@
+import AppShell from "./Components/AppShell"
 function App() {
   return (
-    <div><h1 className="text-3xl">Waguan</h1></div>
+    <div><AppShell></AppShell></div>
   )
 }
 
