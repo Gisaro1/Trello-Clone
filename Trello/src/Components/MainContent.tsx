@@ -1,6 +1,6 @@
 function MainContent() {
   return (
-    <div>MainContent</div>
+    <div></div>
   )
 }
 
