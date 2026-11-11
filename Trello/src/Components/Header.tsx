@@ -1,11 +1,11 @@
-import { Trello,Grid ,Search,Announcemnet,Notification,} from "./AssetsT"
+import { Trello,Grid ,Search,Announcemnet,Notification,Account,Question} from "./AssetsT"
 function Header() {
   return (
     <div className="flex items-center justify-between p-2 border border-b-[#5e5e60]">
-        <div className="flex h-6 gap-4">
-          <img src={Grid} alt="" />
-          <div className="flex text-white font-semibold text-sm gap-2">
-            <img src={Trello} alt="" />
+        <div className="flex h-6 gap-4 items-center">
+          <img src={Grid} alt="" className="h-4" />
+          <div className="flex text-white font-semibold text-sm gap-2 items-center">
+            <img src={Trello} alt=""  className="h-4"/>
             <h1>Trello</h1>
           </div>
         <div className="bg-[#2f2f31] w-150 border border-[#5e5e60] rounded-sm ml-32 text-[#87878b] flex items-center text-[12px] gap-1">
@@ -19,8 +19,8 @@ function Header() {
       <div className="flex items-center gap-2">
         <img src={Announcemnet} alt="" className="h-4"/>
         <img src={Notification} alt=""className="h-4" />
-        <img src={Search} alt="" className="h-4"/>
-        <img src={Grid} alt="" className="h-4"/>
+        <img src={Question} alt="" className="h-4"/>
+        <img src={Account} alt="" className="h-4"/>
       </div>
     </div>
   )
