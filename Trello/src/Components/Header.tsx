@@ -1,9 +1,12 @@
 import { Trello,Grid ,Search,Announcemnet,Notification,Account,Question} from "./AssetsT"
-function Header() {
+interface HeaderProps{
+  onToggle():void
+}
+function Header({onToggle}:HeaderProps) {
   return (
     <div className="flex items-center justify-between p-2 border border-b-[#5e5e60]">
         <div className="flex h-6 gap-4 items-center">
-          <img src={Grid} alt="" className="h-4" />
+          <img src={Grid} alt="" className="h-4" onClick={onToggle}/>
           <div className="flex text-white font-semibold text-sm gap-2 items-center">
             <img src={Trello} alt=""  className="h-4"/>
             <h1>Trello</h1>
