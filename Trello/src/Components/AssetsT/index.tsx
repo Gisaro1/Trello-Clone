@@ -13,4 +13,6 @@ export {default as Search} from '../AssetsT/icons8-search-30.png'
 export {default as Question} from '../AssetsT/icons8-question-48.png'
 export {default as Account} from '../AssetsT/icons8-account-48.png'
 export {default as Chevron} from '../AssetsT/icons8-chevron-down-30.png'
-
+export {default as Cancel} from '../AssetsT/icons8-cancel-50.png'
+export {default as Clock} from '../AssetsT/icons8-clock-50.png'
+export {default as Spider} from '../AssetsT/download.jpg'
