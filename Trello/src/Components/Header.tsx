@@ -1,4 +1,5 @@
 import { Trello,Grid ,Search,Announcemnet,Notification,Account,Question} from "./AssetsT"
+import Logos from "./Logos"
 interface HeaderProps{
   onToggle():void
 }
@@ -20,10 +21,10 @@ function Header({onToggle}:HeaderProps) {
         </div>
         </div>
       <div className="flex items-center gap-2">
-        <img src={Announcemnet} alt="" className="h-4"/>
-        <img src={Notification} alt=""className="h-4" />
-        <img src={Question} alt="" className="h-4"/>
-        <img src={Account} alt="" className="h-4"/>
+        <Logos icon={Announcemnet} text="Share your thoughts on Trellor"></Logos>
+        <Logos icon={Notification} text="Notifications" />
+        <Logos icon={Question} text="Informations"/>
+        <Logos icon={Account} text="Account"/>
       </div>
     </div>
   )

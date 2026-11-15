@@ -19,13 +19,13 @@ function MainContent() {
         <div className="flex items-center justify-between w-[130vh]">
         <div className="flex gap-2 items-center">
           <img src={Upload} alt="" className="h-7" />
-          <h1 className="text-lg font-semibold">Most popular templates</h1>
+          <h1 className="text-lg font-bold">Most popular templates</h1>
         </div>
         <img src={Cancel} alt="" className="pl-12 h-8" />
         </div>
         <div className="pt-3 flex items-center gap-2">
           <h1 className="text-[12px]">Get going faster with a template from the Trello community or </h1>
-          <div className="text-sm flex items-center justify-between w-42 bg-[#1f1f21] rounded px-3 cursor-pointer py-1 border border-[#7e8188] bg-[#383839]">
+          <div className="text-sm flex items-center justify-between w-42 rounded px-3 cursor-pointer py-1 border border-[#7e8188] bg-[#383839]">
             <h1>Choose category</h1>
             <img src={Chevron} alt=""  className="h-5"/>
           </div>
