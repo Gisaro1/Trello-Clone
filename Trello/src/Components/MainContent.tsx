@@ -1,21 +1,35 @@
 import LeftDiv from "./LeftDiv"
 import RightDiv from "./RightDiv"
 import {Beat,BUpload,BBeat,Bchart,Upload,Chart,Account,Chevron,Cancel,Clock,Spider} from '../Components/AssetsT/index'
+import { useState } from "react"
 function MainContent() {
+  const [isOpen,setIsOpen] = useState(true)
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div className=" flex">
+    <div className=" flex rounded-xl overflow-hidden">
       <div className="pt-8 pb-4 flex flex-col ">
         <LeftDiv image={Chart} hover={Bchart} text="Boards" ></LeftDiv>
         <LeftDiv image={Upload} hover={BUpload} text="Templates"></LeftDiv>
         <LeftDiv image={Beat} hover={BBeat} text="Home"></LeftDiv>
         <div className="ml-10 mt-4 border-b border-[#545456] w-56" />
         <h1 className='text-[#cecfd2] text-sm font-semibold pl-10 pt-2'>Workspaces</h1>
-        <div className="flex items-center">
+        <div className="flex items-center " onClick={toggleDropdown} >
           <LeftDiv image={Account} text="Gisaro's workspaces" />
-            <img src={Chevron} alt="" className=" h-8 pt-4 mr-4" />
+            <img src={Chevron} alt="" className={`h-5 transition-transform duration-200 ${
+            isOpen ? 'rotate-180' : 'rotate-0'
+          }`} />
         </div>
+        {isOpen && (
+        <div className="pl-8">
+          <LeftDiv image={Chart} hover={Bchart} text="Board" />
+          <LeftDiv image={Upload} hover={BUpload} text="Templates" />
+          <LeftDiv image={Beat} hover={BBeat} text="Home" />
+        </div>
+      )}
       </div>
-      <div className="text-[#cecfd2] pt-10 pl-6">
+      <div className="text-[#cecfd2] pt-10 pl-5">
         <div className="flex items-center justify-between w-[130vh]">
         <div className="flex gap-2 items-center">
           <img src={Upload} alt="" className="h-7" />
