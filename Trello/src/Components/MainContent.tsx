@@ -1,6 +1,6 @@
 import LeftDiv from "./LeftDiv"
 import RightDiv from "./RightDiv"
-import {Beat,BUpload,BBeat,Bchart,Upload,Chart,Account,Chevron,Cancel,Clock,Spider} from '../Components/AssetsT/index'
+import {Beat,BUpload,BBeat,Bchart,Upload,Chart,Account,Chevron,Cancel,Clock,Spider,Macl,Panda,Trust,Iron} from '../Components/AssetsT/index'
 import { useState } from "react"
 function MainContent() {
   const [isOpen,setIsOpen] = useState(true)
@@ -51,10 +51,10 @@ function MainContent() {
         </div>
         <div className="grid grid-cols-4 gap-4">
           <RightDiv image={Spider} text="React-Theory"></RightDiv>
-          <RightDiv image={Spider} text="React-Theory"></RightDiv>
-          <RightDiv image={Spider} text="React-Theory"></RightDiv>
-          <RightDiv image={Spider} text="React-Theory"></RightDiv>
-          <RightDiv image={Spider} text="React-Theory"></RightDiv>
+          <RightDiv image={Panda} text="Panda-Theory"></RightDiv>
+          <RightDiv image={Macl} text="Car-Theory"></RightDiv>
+          <RightDiv image={Trust} text="Trust-Theory"></RightDiv>
+          <RightDiv image={Iron} text="Iron-Theory"></RightDiv>
         </div>
       </div>
     </div>
