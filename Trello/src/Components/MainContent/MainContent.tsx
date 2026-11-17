@@ -1,7 +1,7 @@
-import LeftDiv from "./LeftDiv"
-import RightDiv from "./RightDiv"
-import SmallCard from "./SmallCard"
-import {Beat,BUpload,BBeat,Bchart,Upload,Chart,Account,Chevron,Cancel,Clock,Macl,Panda,Trust,Iron} from '../Components/AssetsT/index'
+import LeftDiv from "../MainContent/LeftDiv"
+import RightDiv from "../MainContent/RightDiv"
+import SmallCard from "../MainContent/SmallCard"
+import {Beat,BUpload,BBeat,Bchart,Upload,Chart,Account,Chevron,Cancel,Clock,Macl,Panda,Trust,Iron} from '../AssetsT/index'
 import { useState } from "react"
 function MainContent() {
   const [isOpen,setIsOpen] = useState(true)

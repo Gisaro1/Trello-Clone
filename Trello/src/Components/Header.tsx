@@ -1,5 +1,5 @@
 import { Trello,Grid ,Search,Announcemnet,Notification,Account,Question} from "./AssetsT"
-import Logos from "./Logos"
+import Logos from "./MainContent/Logos"
 interface HeaderProps{
   onToggle():void
 }

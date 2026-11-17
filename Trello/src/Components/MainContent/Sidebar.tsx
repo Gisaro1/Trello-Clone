@@ -1,5 +1,5 @@
-import { Chevron,Trello ,Microsoft,Favi,Apple} from "../Components/AssetsT/index"
-import SideCard from "./SideCard"
+import { Chevron,Trello ,Microsoft,Favi,Apple} from "../AssetsT/index"
+import SideCard from "../MainContent/SideCard"
 interface SidebarProps{
   isOpen:boolean
 }

@@ -1,6 +1,6 @@
 import Header from "./Header"
-import MainContent from "./MainContent"
-import Sidebar from "./Sidebar"
+import MainContent from "./MainContent/MainContent"
+import Sidebar from "../Components/MainContent/Sidebar"
 import { useState } from "react"
 function AppShell() {
   const [isOpen, setIsOpen] = useState(false)
