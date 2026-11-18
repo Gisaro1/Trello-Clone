@@ -5,8 +5,12 @@ import {Beat,BUpload,BBeat,Bchart,Upload,Chart,Account,Chevron,Cancel,Clock,Macl
 import { useState } from "react"
 function MainContent() {
   const [isOpen,setIsOpen] = useState(true)
+  const [isClosed,setIsClosed] = useState(true)
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+  };
+  const Tdown = () => {
+    setIsClosed(!isClosed);
   };
   return (
     <div className=" flex rounded-xl overflow-hidden">
@@ -16,7 +20,7 @@ function MainContent() {
         <LeftDiv image={Beat} hover={BBeat} text="Home"></LeftDiv>
         <div className="ml-10 mt-4 border-b border-[#545456] w-56" />
         <h1 className='text-[#cecfd2] text-sm font-semibold pl-10 pt-2'>Workspaces</h1>
-        <div className="flex items-center  hover:bg-[#1C2B42] transition-all duration-300 ease-out rounded-lg ml-10" onClick={toggleDropdown}>
+        <div className="flex items-center  hover:bg-[#1C2B42] transition-all duration-300 ease-out rounded-lg " onClick={toggleDropdown}>
           <LeftDiv image={Account} text="Gisaro's workspaces" />
             <img src={Chevron} alt="" className={`h-5 transition-transform duration-200 ${
             isOpen ? 'rotate-180' : 'rotate-0'
@@ -42,8 +46,20 @@ function MainContent() {
           <h1 className="text-[12px]">Get going faster with a template from the Trello community or </h1>
           <div className="text-sm flex items-center justify-between w-42 rounded px-3 cursor-pointer py-1 border border-[#7e8188] bg-[#383839]">
             <h1>Choose category</h1>
-            <img src={Chevron} alt=""  className="h-5"/>
+            <img src={Chevron} alt="" onClick={Tdown} className={`h-5 transition-transform duration-200 ${
+            isOpen ? 'rotate-180' : 'rotate-0'
+          }`}/>
           </div>
+          {isClosed && (<div className="bg-[#242528] absolute right-114 top-40 w-42 rounded-lg flex flex-col items-ce p-2 h-32 overflow-y-auto scrollbar-thin [&::-webkit-scrollbar]:w-1.5">
+            <h1>Popular</h1>
+            <h1>small Business</h1>
+            <h1>Design</h1>
+            <h1>Marketing</h1>
+            <h1>Popular</h1>
+            <h1>small Business</h1>
+            <h1>Design</h1>
+            <h1>Marketing</h1>
+          </div>)}
         </div>
         <h1 className="text-sm text-[#669df1] underline decoration-[#669df1] pt-6">Browse the full template gallery</h1>
         <div className="flex gap-2 items-center pt-8">
