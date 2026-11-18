@@ -10,13 +10,13 @@ function MainContent() {
   };
   return (
     <div className=" flex rounded-xl overflow-hidden">
-      <div className="pt-8 pb-4 flex flex-col ">
+      <div className="pt-8 pb-4 flex flex-col gap-2">
         <LeftDiv image={Chart} hover={Bchart} text="Boards" ></LeftDiv>
         <LeftDiv image={Upload} hover={BUpload} text="Templates"></LeftDiv>
         <LeftDiv image={Beat} hover={BBeat} text="Home"></LeftDiv>
         <div className="ml-10 mt-4 border-b border-[#545456] w-56" />
         <h1 className='text-[#cecfd2] text-sm font-semibold pl-10 pt-2'>Workspaces</h1>
-        <div className="flex items-center " onClick={toggleDropdown} >
+        <div className="flex items-center  hover:bg-[#1C2B42] transition-all duration-300 ease-out rounded-lg ml-10" onClick={toggleDropdown}>
           <LeftDiv image={Account} text="Gisaro's workspaces" />
             <img src={Chevron} alt="" className={`h-5 transition-transform duration-200 ${
             isOpen ? 'rotate-180' : 'rotate-0'

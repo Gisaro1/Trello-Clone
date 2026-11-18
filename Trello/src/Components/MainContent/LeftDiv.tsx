@@ -1,7 +1,7 @@
 function LeftDiv({ image,hover, text,textH }: { image: string,hover?:string, text: string,textH?:string }) {
   return (
    <div className="">
-    <div className="group relative  gap-2 ml-10 pt-4 w-56 cursor-pointer flex items-center">
+    <div className="group relative  gap-2 ml-10 py-2 w-56 cursor-pointer flex  px-2 hover:bg-[#1C2B42] transition-all duration-300 ease-out rounded-lg items-center">
       <img src={image} alt="" className={`h-5 shrink-0 ${hover ? "group-hover:hidden" : ""}`} />
       {hover && (
         <img
